@@ -13,13 +13,19 @@
 
   </head>
   <body>
-      <!-- <!-............................................NAVIGATION................................-> -->
     <header class="header">
       <div class="container header__container">
+        <a class="navigation__logo" href="./index.html">
+          <span class="navigation__logo accent">Web</span><span class="navigation__logo basic">Studio</span>
+        </a>
+        <button type="button" aria-controls="menu-container" aria-expanded="false" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
+            <use href="./images/icon/sprite.svg#icon-menu"></use> 
+            <use href="./images/icon/sprite.svg#icon-cross"></use> 
+        </svg>
+        </button>
+        <div class="menu-container " id="menu-container" data-menu>
         <nav class="navigation">
-          <a class="navigation__logo" href="./index.html">
-            <span class="navigation__logo accent">Web</span><span class="navigation__logo basic">Studio</span>
-          </a>
           <ul class="navigation__list ">
             <li class="navigation__item">
               <a class="navigation__link" href="./index.html">Студия</a>
@@ -49,21 +55,62 @@
             </a>
              </li>
           </ul> 
-        </div>  
-            
+        </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >Instagram</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >Twitter</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >Facebook</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+         
+        </div>
       </div>
       
     </header>
     <main>
-      <!-- ...................................................MAIN.......................... -->
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__header"> Эффективные решения <br> для вашего бизнеса</h1>
-          <button data-modal-open class="hero__button" type="button" data-modal-open>Заказать услугу</button>
+          <button data-modal-open class="hero__button" type="button"> Заказать услугу</button>
         </div>
         </section>
       
-      <!-- ..........................................FEATURES.................................. -->
       <section class=" feature section">
         <div class="container feature__container">
           <h2 class="feature__header visually-hidden">Особенности</h2>
@@ -117,7 +164,6 @@
         </div>
         </section>
         
-      <!-- .....................................WHAT....... WE.....DO........... -->
          <section class="design section">
            <div class="container design__container">
             <h2 class="design__heading heading"> Чем мы занимаемся</h2>
@@ -129,7 +175,7 @@
                </div>
               </li>
               <li class="design__item">
-               <img class="design__img" src="./images/box 3.jpg" alt="разработка приложений"width="370" height="294" >
+               <img class="design__img" src="./images/box 3.jpg" alt="разработка приложений" width="370" height="294" >
                <div class="design__overlay">
                 <p class="design__app">Мобильные приложения</p>
               </div>
@@ -143,7 +189,7 @@
             </ul>
            </div>
          </section>
-         <!-- ...................................TEAM.........................-->
+
          <section class="team section">
            <div class="container team__container">
             <h2 class="team__heading heading">Наша команда</h2>
@@ -310,7 +356,7 @@
             </ul>
            </div>   
          </section>
-         <!-- ..........................CLIENTS.............................. -->
+
          <section  class=" clients section">
            <div class="container clients__container">
             <h2 class="clients__heading heading">Постоянные клиенты</h2>
@@ -361,11 +407,10 @@
            </div> 
          </section>
     </main>
-    <!-- ///////////////////////////////////FOOTER>>>>>>>>>>>>>>>>>>> -->
 
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__info">
           <div class="footer__logo">
           <a class="footer__logotype" href="./index.html">
             <span class="footer__logotype start">Web</span><span class="footer__logotype end">Studio</span>
@@ -433,7 +478,7 @@
     </div>
   </footer>
 
-<!--<<<<<<<<<<<<<<< модалка >>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
       
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
@@ -467,7 +512,7 @@
               <label class="form__label">
                 <span class="form__type">Почта</span>
                 <span>
-                  <input class="form__input"type="email" name="email" required>
+                  <input class="form__input" type="email" name="email" required>
               <svg class="form__icon" width="18" height="18"> 
                 <use href="./images/icon/sprite.svg#letter"></use> 
             </svg>
@@ -475,7 +520,7 @@
               </label>
               <label class="form__label">
                 <span class="form__type">Комментарий</span>
-                <textarea class="form__textarea"name="comment" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                <textarea class="form__textarea" name="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
               </label>
 
               <label class="checkbox__label">
@@ -499,6 +544,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     
 
 

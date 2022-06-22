@@ -1,7 +1,28 @@
 .footer__container{
+    @media screen and (max-width:767px){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    @media screen and (min-width:1200px){
 max-width: 1600px;
 display: flex;
 align-items: baseline;
+    }
+}
+.footer__info{
+    @media screen and (max-width:767px){
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width:1199px){
+        text-align: center;
+    }
 }
 .footer__logo{
 margin-top: 20px;
