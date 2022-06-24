@@ -15,10 +15,17 @@
      <!--Навігація у шапці-->
      <header class="header">
       <div class="container header__container">
+        <a class="navigation__logo" href="./index.html">
+          <span class="navigation__logo accent">Web</span><span class="navigation__logo basic">Studio</span>
+        </a>
+        <button class="menu-button" type="button" aria-controls="menu-container" aria-expanded="false" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
+            <use class="icon-cross" href="./images/icon/sprite.svg#icon-cross"></use> 
+            <use class="icon-menu" href="./images/icon/sprite.svg#icon-menu"></use> 
+        </svg>
+        </button>
+        <div class="menu-container " id="menu-container" data-menu>
         <nav class="navigation">
-          <a class="navigation__logo" href="./index.html">
-            <span class="navigation__logo accent">Web</span><span class="navigation__logo basic">Studio</span>
-          </a>
           <ul class="navigation__list ">
             <li class="navigation__item">
               <a class="navigation__link" href="./index.html">Студия</a>
@@ -31,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <div class="address">
+        
           <ul class="address__list ">
             <li class="address__item">
               <a class="address__link" href="mailto:info@devstudio.com">
@@ -47,8 +54,52 @@
               </svg> +38 096 111 11 11
             </a>
              </li>
-          </ul>   
-        </div> 
+          </ul> 
+        
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >Instagram</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >Twitter</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >Facebook</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href=""
+                class="menu__link"
+                target="_blank"
+                rel="noopener noreferer"
+                lang="en"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+         
+        </div>
       </div>
       
     </header>
@@ -262,5 +313,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
+
 </body>
 </html>
