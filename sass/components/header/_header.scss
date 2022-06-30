@@ -55,8 +55,8 @@
     @media screen and (max-width:767px){
     position: absolute;
     padding: 40px 48px;
-    width: 100%;
-    
+    width: 100vw;
+    height: 100vh;
 
     &.is-open{
         background-color: #fff;
@@ -64,6 +64,8 @@
         left: 0;
         display: flex;
         flex-direction: column;
+        height: 100vh;
+
     }
 }
      @media screen and (min-width:768px){
@@ -72,9 +74,29 @@
 }
 
 .menu__list{
+    @media screen and(max-width:767px){
+        display: flex;
+    }
     @media screen and (min-width:768px){
         display: none;
 }
+} 
+
+.menu__item{
+    @media screen and (max-width:767px){
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+        &:hover,
+        &:focus{
+            color: var(--accent-color);
+        }
+    }
 }
 .navigation__logo{
 font-family: 'Raleway';
@@ -168,6 +190,16 @@ list-style-type: none;
 color: var(--main-color);
 background-color: transparent;
 
+@media screen and(max-width:767px){
+    font-size: 40px;
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
 @media screen and (min-width:768px){
 
 &:not(:last-child){
@@ -177,13 +209,6 @@ background-color: transparent;
 }
 
 
-// DOESN'T WORK
-// .address__list{
-//     @media screen and (max-width:767px){
-//         margin-top: auto;
-//     }
-    
-// }
 
 .address__list{
 color: var(--secondary-color);
@@ -193,7 +218,12 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 list-style-type: none;
-
+@media screen and (max-width:767px){
+    margin-top: 202px;
+    margin-bottom: 64px;
+    flex-direction: column-reverse;
+    font-size: 32px;
+}
 @media screen and (min-width:768px) {
 margin-left: 84px;
 display: flex;
@@ -210,6 +240,9 @@ align-items: center;
 }
 
 .address__item:not(:last-child){
+ @media screen and (max-width:767px){
+    margin-bottom: 32px;
+ }
  @media screen and (min-width:1200px){
   margin-right: 30px;
 }

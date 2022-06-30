@@ -159,7 +159,8 @@ img {
   .menu-container {
     position: absolute;
     padding: 40px 48px;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
   }
   .menu-container.is-open {
     background-color: #fff;
@@ -172,6 +173,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100vh;
   }
 }
 
@@ -183,9 +185,32 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu__list {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .menu__item:hover, .menu__item:focus {
+    color: var(--accent-color);
   }
 }
 
@@ -303,6 +328,18 @@ img {
   background-color: transparent;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation__item {
+    font-size: 40px;
+  }
+  .navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .navigation__item:hover, .navigation__item:focus {
+    color: var(--accent-color);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navigation__item:not(:last-child) {
     margin-right: 50px;
@@ -317,6 +354,18 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style-type: none;
+}
+
+@media screen and (max-width: 767px) {
+  .address__list {
+    margin-top: 202px;
+    margin-bottom: 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    font-size: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -347,6 +396,12 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
 
