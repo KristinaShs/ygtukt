@@ -867,11 +867,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: calc((100%-90px)/3);
-        flex-basis: calc((100%-90px)/3);
-  }
-  .clients__item:nth-child(2n+1) {
-    margin-right: 30px;
+    -ms-flex-preferred-size: calc((100%-60px)/2);
+        flex-basis: calc((100%-60px)/2);
   }
   .clients__item:nth-child(-n+4) {
     margin-bottom: 30px;
