@@ -89,6 +89,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    overflow: hidden;
   }
 }
 
@@ -119,6 +120,7 @@ img {
 }
 
 .menu-button {
+  overflow: hidden;
   position: absolute;
   top: 11px;
   right: 30px;
@@ -1173,14 +1175,14 @@ img {
 
 @media screen and (max-width: 767px) {
   .card__item {
-    width: 450px;
+    width: 100%;
   }
   .card__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .card__item {
     width: 354px;
   }
@@ -1189,6 +1191,9 @@ img {
   }
   .card__item:last-child {
     margin-right: 0;
+  }
+  .card__item:nth-child(-n+8) {
+    margin-bottom: 30px;
   }
 }
 
